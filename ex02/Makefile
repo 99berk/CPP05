@@ -1,10 +1,14 @@
-SRC = Bureaucrat.cpp main.cpp AForm.cpp ShrubberyCreationForm.cpp PresidentialPardonForm.cpp RobotomyRequestForm.cpp
-OBJ = $(SRC:.cpp=.o)
-CC = c++
-RM = rm -f
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98
-
 NAME = bureaucrat
+
+CC = c++
+
+SRC = Bureaucrat.cpp main.cpp AForm.cpp ShrubberyCreationForm.cpp PresidentialPardonForm.cpp RobotomyRequestForm.cpp
+
+OBJ = $(SRC:.cpp=.o)
+
+RM = rm -f
+
+CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
 all: $(NAME)
 
