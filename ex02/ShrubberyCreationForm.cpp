@@ -47,12 +47,14 @@ void ShrubberyCreationForm::execute(Bureaucrat const &executor) const
 		return;
 	}
 
-	file << "        _-_-_\n";
-	file << "      /~~   ~~\\\n";
-	file << "   /~~         ~~\\\n";
-	file << "  {               }\n";
-	file << "   \\  _-_-_-_-_  /\n";
-	file << "     ~-_______-~\n";
+	file << "       /\\\n";
+	file << "      /  \\\n";
+	file << "     /____\\\n";
+	file << "     /    \\\n";
+	file << "    /______\\\n";
+	file << "       ||\n";
+	file << "       ||\n";
+	file << "    ___||___\n";
 
 	file.close();
 	std::cout << "Shrubbery created for target: " << this->target << std::endl;
