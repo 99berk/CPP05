@@ -42,7 +42,7 @@ int main()
     std::cout << std::endl;
 
     try {
-        Bureaucrat b5("Ensar", 150);
+        Bureaucrat b5("Ensar", 160);
         std::cout << b5 << std::endl;
         b5.decrementGrade();
     } catch (std::exception &e) {
