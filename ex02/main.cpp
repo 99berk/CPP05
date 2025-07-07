@@ -78,33 +78,6 @@ int main()
 		std::cerr << "Exception: " << e.what() << std::endl;
 	}
 
-	std::cout << "\n=== Testing with medium-grade bureaucrat ===" << std::endl;
-	try
-	{
-		Bureaucrat mediumBureaucrat("Alice", 50);
-		std::cout << mediumBureaucrat << std::endl;
-		
-		std::cout << std::endl;
-		
-		RobotomyRequestForm robotomyForm2("Bob");
-		std::cout << robotomyForm2 << std::endl;
-		
-		std::cout << std::endl;
-
-		mediumBureaucrat.signForm(robotomyForm2);
-		std::cout << "After signing: " << robotomyForm2 << std::endl;
-		
-		std::cout << std::endl;
-		
-		mediumBureaucrat.executeForm(robotomyForm2);
-
-		std::cout << std::endl;
-	}
-	catch (const std::exception &e)
-	{
-		std::cerr << "Exception: " << e.what() << std::endl;
-	}
-
 	std::cout << "\n=== Testing Presidential Pardon with insufficient grade ===" << std::endl;
 	try
 	{
@@ -119,7 +92,7 @@ int main()
 		std::cout << std::endl;
 		
 		midGradeBureaucrat.signForm(pardonForm2);
-		std::cout << "After signing: " << pardonForm2 << std::endl;
+		std::cout << "After signing:\n" << pardonForm2 << std::endl;
 		
 		std::cout << std::endl;
 
